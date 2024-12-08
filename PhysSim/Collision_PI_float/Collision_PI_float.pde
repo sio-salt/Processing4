@@ -2,7 +2,7 @@ int sizeW = 1200;
 int sizeH = 800;
 int wallorblock;
 float ground = float(sizeH) / 1.5;
-int digits = 6;
+int digits = 5;
 float mass = pow(100, float(digits));
 int collisioncount = 0;
 int checkcount = 20000;
@@ -20,7 +20,7 @@ void settings() {   //size関数の中で変数を使いたいときにsettings�
 }
 
 void setup() {
-  file = new SoundFile(this, "click.wav");
+  file = new SoundFile(this, "clack.wav");
   file.amp(0.4);
   rectMode(RADIUS);
   textSize(50);
